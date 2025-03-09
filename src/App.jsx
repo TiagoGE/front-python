@@ -29,7 +29,7 @@ function App() {
       release_year: releaseYear,
     };
     try {
-      const response = await fetch("hhttps://api-python-anjz.onrender.com/api/books/create/", {
+      const response = await fetch("https://api-python-anjz.onrender.com/api/books/create/", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
