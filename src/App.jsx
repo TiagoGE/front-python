@@ -15,7 +15,7 @@ function App() {
 
   const fetchBooks = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/books/");
+      const response = await fetch("https://api-python-anjz.onrender.com/api/books/");
       const data = await response.json();
       setBooks(data);
     } catch (err) {
@@ -29,7 +29,7 @@ function App() {
       release_year: releaseYear,
     };
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/books/create/", {
+      const response = await fetch("hhttps://api-python-anjz.onrender.com/api/books/create/", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ function App() {
       release_year,
     };
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/books/${pk}`, {
+      const response = await fetch(`https://api-python-anjz.onrender.com/api/books/${pk}`, {
         method: "PUT",
         headers: {
           'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ function App() {
 
   const deleteBook = async (pk) => {
     try {
-      await fetch(`http://127.0.0.1:8000/api/books/${pk}`, {
+      await fetch(`https://api-python-anjz.onrender.com/api/books/${pk}`, {
         method: "DELETE",
       });
 
